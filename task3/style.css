@@ -1,0 +1,9 @@
+#person-tbl{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+th, td{
+    border: 1px solid black;
+}

@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+    html{
+      font-size: 13px;
+    }
+}
+
+body {
+    background-color: #d9d9d9;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        width: 90%;
+    }
+}
+
+.main-header{
+    background-color:#c4c4c4;
+    display: flex;
+    justify-content: space-between;
+    border: 0.15rem solid black;
+    padding-left: 0.3em;
+}
+
+.main-header .settings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em; 
+    border-left: 0.15rem solid black;
+}
+
+.main-header a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.main-header img{
+    border-radius: 20px;
+    width: 25%;
+}
+
+.main-content{
+    border: 0.15rem solid black;
+    border-top: none;
+    display: flex;
+}
+
+.left-menu{
+    width: 25%;
+    background-color:#e5e5e5;
+    border-right: 0.15rem solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.left-menu a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    border-bottom: 0.15rem solid black;
+    border-top: 0.15rem solid black;
+}
+
+@media screen and (max-width: 600px){
+    .left-menu{
+        display: none;
+    }
+}
+
+.left-menu a:first-child{
+    border-top: none;
+}
+
+.profile{
+    width: 75%;
+    background-color:#e5e5e5;
+}
+
+@media screen and (max-width: 600px) {
+    .profile{
+        width: 100%;
+    }
+}
+
+.profile-header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    border-bottom: 0.15rem solid black;
+    width: 98%;
+}
+
+.profile-content{
+    display: flex;
+    padding-top: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    .profile-content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.profile-left-column{
+    width: 40%;
+    text-align: center;
+    padding-bottom: .1em;
+}
+
+@media screen and (max-width: 600px) {
+    .profile-left-column{
+        width: 100%;
+    }
+}
+
+.profile-photo{
+    width: 80%;
+    margin: auto;
+    background-color:#c4c4c4;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+@media screen and (max-width: 600px) {
+    .profile-photo{
+        width: 20rem;
+    }
+}
+
+.profile-btn{
+    background-color:#c4c4c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+    color: black;
+    text-decoration: none;
+}
+
+.under-photo-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    .under-photo-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.profile-interaction-btn{
+    width: 45%;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .profile-interaction-btn:last-child{
+        margin-top: 1em;
+    }
+}
+
+.profile-news-btn{
+    width: 60%;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .profile-news-btn{
+        width: 36%;
+    }
+}
+
+.profile-friends-block{
+    width: 90%;
+    background-color:#c4c4c4;
+    margin: auto;
+    margin-top: 0.5em;
+}
+
+.profile-friends-block h3{
+    background-color: white;
+    text-align: left;
+    padding: 0.2em;
+}
+
+.friends-panel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 0.2em;
+}
+
+.friend{
+    width: 4em;
+    height: 4em;
+    margin-top: 0.4em;
+    border: 0.05rem solid black;
+}
+
+.profile-right-column{
+    width: 60%;
+    text-align: left;
+    padding-bottom: .4em;
+}
+
+@media screen and (max-width: 600px) {
+    .profile-right-column{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.profile-right-column h2{
+    width: 90%;
+    background-color:#c4c4c4;
+    text-align: center;
+}
+
+.profile-info{
+    width: 90%;
+    background-color:#c4c4c4;
+    margin-top: 1.5em;
+    padding-bottom: .8em;
+    border: 0.05rem solid black;
+}
+
+.profile-info p{
+    margin-left: 2%;
+    margin-bottom: 0.4em;
+}
+
+.profile-info a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.profile-photos{
+    background-color:#c4c4c4;
+    border: 1px solid black;
+    margin-top: 0.4em;
+    width: 90%;
+}
+
+.photos-header{
+    background-color: white;
+    border-bottom: 0.05rem solid black;
+    padding-left: 0.5em;
+}
+
+.photos-panel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 0.4em;
+}
+
+.photo{
+    width: 8em;
+    height: 8em;
+    border: 0.05rem solid black;
+    margin-bottom: 0.4em;
+}
+
+.profile-posts{
+    background-color:#c4c4c4;
+    border: 0.05rem solid black;
+    margin-top: 1.5em;
+    width: 90%;
+    padding-bottom: 3em;
+}
+
+.posts-header{
+    background-color: white;
+    border-bottom: 0.05rem solid black;
+    padding-left: 0.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.posts-header a{
+    display: block;
+    background-color: #c4c4c4;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 0.2em;
+    text-decoration: none;
+    color: black;
+}
+
+.post{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 1em;
+}
+
+.post-photo{
+    width: 20%;
+    border: 0.05rem solid black;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    align-self: flex-start;  
+}
+
+.post-right{
+    width: 80%;
+    padding-left: 0.3em;
+}
+
+.post-right h3{
+    font-weight: normal;
+}
+
+.post-right p{
+    border: 0.05rem solid black;
+    margin-top: 0.4em;
+    min-height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 601px) {
+    html {
+      font-size: 18px;
+    }
+}

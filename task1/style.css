@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d9d9d9;
+  }
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.main-header{
+    background-color:#c4c4c4;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding-left: 0.5%;
+}
+
+.main-header a{
+    width: 0%;
+    border-left: 2px solid black;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.main-header img{
+    border-radius: 20px;
+    width: 25%;
+}
+
+.main-content{
+    border: 2px solid black;
+    border-top: none;
+    display: flex;
+}
+
+.left-menu{
+    width: 25%;
+    background-color:#e5e5e5;
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.left-menu a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.left-menu a:first-child{
+    border-top: none;
+}
+
+.profile{
+    width: 75%;
+    background-color:#e5e5e5;
+}
+
+.profile-header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    border-bottom: 2px solid black;
+    width: 98%;
+}
+
+.profile-content{
+    display: flex;
+}
+
+.profile-left-column{
+    width: 40%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.profile-photo{
+    width: 80%;
+    margin: auto;
+    background-color:#c4c4c4;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.profile-btn{
+    background-color:#c4c4c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.under-photo-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.profile-interaction-btn{
+    width: 45%;
+    text-align: center;
+}
+
+.profile-news-btn{
+    width: 60%;
+    margin: auto;
+}
+
+.profile-friends-block{
+    width: 90%;
+    background-color:#c4c4c4;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.profile-friends-block h3{
+    background-color: white;
+    text-align: left;
+    padding: 1%;
+}
+
+.friends-panel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.friend{
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+    border: 1px solid black;
+}
+
+.profile-right-column{
+    width: 60%;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.profile-right-column h2{
+    width: 90%;
+    background-color:#c4c4c4;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.profile-info{
+    width: 90%;
+    background-color:#c4c4c4;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid black;
+}
+
+.profile-info p{
+    margin-left: 2%;
+    margin-bottom: 10px;
+}
+
+.profile-info a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.profile-photos{
+    background-color:#c4c4c4;
+    border: 1px solid black;
+    margin-top: 5px;
+    width: 90%;
+}
+
+.photos-header{
+    background-color: white;
+    border-bottom: 1px solid black;
+    padding-left: 1%;
+}
+
+.photos-panel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+
+.photo{
+    width: 140px;
+    height: 140px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+.profile-posts{
+    background-color:#c4c4c4;
+    border: 1px solid black;
+    margin-top: 20px;
+    width: 90%;
+    padding-bottom: 50px;
+}
+
+.posts-header{
+    background-color: white;
+    border-bottom: 1px solid black;
+    padding-left: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.posts-header a{
+    display: block;
+    background-color: #c4c4c4;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0.5%;
+    text-decoration: none;
+    color: black;
+}
+
+.post{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 10px;
+}
+
+.post-photo{
+    width: 20%;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    align-self: flex-start;  
+}
+
+.post-right{
+    width: 80%;
+    padding-left: 1%;
+}
+
+.post-right h3{
+    font-weight: normal;
+}
+
+.post-right p{
+    border: 1px solid black;
+    margin-top: 5px;
+    min-height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

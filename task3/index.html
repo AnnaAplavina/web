@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="dynamicTable">
+        <table class="test-tbl">
+            <tr>
+            </tr>
+        </table>
+    </div>
+    <input type="text" id="text-field" name="name" />
+    <button id="create-table-btn" onclick="createTable()">Создать таблицу</button>
+    <button class="disabled" id="add-row-btn" onclick="addRow()">Добавить строку</button>
+    <button class="disabled" id="delete-row-btn" onclick="deleteRow()">Удалить строку 
+        №</button>
+    <div clss="description">
+        <p>
+            Создать таблицу - создаётся таблица, если она не создана.<br>
+            Добавить строку - происходит добалвение новой строки в конец таблицы.<br>
+            Удалить строку - удаление строки с указаным номером. Номер указывается в текстовом поле.
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
