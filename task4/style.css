@@ -1,0 +1,46 @@
+.links{
+    margin-top: 3em;
+    padding-left:33%;
+}
+
+.links .button{
+    margin-right: 1em;
+}
+
+.button{
+    display: inline-block;
+    width: 10em;
+    text-align: center;
+    height: 1.5em;
+    background-color: rgb(94, 111, 240);
+    vertical-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+
+.main-info{
+    text-align: center;
+    border: 2px solid rgb(94, 111, 240);
+    width: 30%;
+    margin: auto;
+    padding: 0.5em;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+header h1{
+    text-align: center;
+}
+
+header{
+    margin-bottom: 3em;
+}
+
+.create-button{
+    margin-top: 3em;
+    padding-left: 44%;
+}
