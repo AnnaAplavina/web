@@ -10,5 +10,5 @@
         $count++;
     }
     $users->asXML('users.xml');
-    header("Location: /web/task4/list.php?");
+    echo "Профиль удалён";
 ?>
