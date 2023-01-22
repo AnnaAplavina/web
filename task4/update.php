@@ -12,6 +12,10 @@
             margin-top: 0.3em;
             margin-bottom: 0.3em;
         }
+        .links-two{
+            margin-top: 3em;
+            padding-left: 40%;
+        }
     </style>
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -19,7 +23,6 @@
     <header>
         <h1>Изменение профиля</h1>
     </header>
-    <div class="container">
         <div class='main-info'>
             <form action="/web/task4/updateuser.php?id=<?php echo $_GET['id'] ?>" method="post">
                 <?php
@@ -49,6 +52,9 @@
                 <button type="submit">Обновить</button>
             </form>
         </div>
-    </div>
+        <div class='links-two'>
+            <a class="button" href='/web/task4/create.php<?php echo '?id='.$_GET['id'] ?>'>Create</a>
+            <a class="button" href='/web/task4/delete.php<?php echo '?id='.$_GET['id'] ?>'>Delete</a>
+        </div>
 </body>
 </html>

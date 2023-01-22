@@ -32,7 +32,7 @@
 <body>
     <div class='container'>
         <div class="links">
-            <a class='button' href="/web/task4/list.php">List</a>
+            <a class='button' href='/web/task4/list.php<?php echo '?id='.$_GET['id'] ?>'>List</a>
             <?php 
                 echo "<a class='button' href='/web/task4/update.php?id=" . $_GET['id'] . "'>Update</a>
                 <a class='button' href='/web/task4/delete.php?id=" . $_GET['id'] . "''>Delete</a>"

@@ -12,35 +12,39 @@
             margin-top: 0.3em;
             margin-bottom: 0.3em;
         }
+        .links-two{
+            margin-top: 3em;
+            padding-left: 40%;
+        }
     </style>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Добавить пользователя</h1>
-        </div>
+        <h1>Добавить пользователя</h1>
     </header>
-    <div class="container">
-        <div class="main-info">
-            <form action="/web/task4/addnewuser.php" method="post">
-                <label>ФИО </label>
-                <input type="text" name="name">
-                <label>Дата Рождения</label>
-                <input type="date" name="birthdate" min="1900-01-01">
-                <label>Город</label>
-                <input list="cities" name="city">
-                <datalist id="cities">
-                    <option value="Владимир">
-                    <option value="Казань">
-                    <option value="Москва">
-                    <option value="Муром">
-                    <option value="Новосибирск">
-                    <option value="Санкт-Петербург">
-                </datalist>
-                <button type="submit">Создать</button>
-            </form>
-        </div>
+    <div class="main-info">
+        <form action="/web/task4/addnewuser.php" method="post">
+            <label>ФИО </label>
+            <input type="text" name="name">
+            <label>Дата Рождения</label>
+            <input type="date" name="birthdate" min="1900-01-01">
+            <label>Город</label>
+            <input list="cities" name="city">
+            <datalist id="cities">
+                <option value="Владимир">
+                <option value="Казань">
+                <option value="Москва">
+                <option value="Муром">
+                <option value="Новосибирск">
+                <option value="Санкт-Петербург">
+            </datalist>
+            <button type="submit">Создать</button>
+        </form>
+    </div>
+    <div class='links-two'>
+        <a class="button" href='/web/task4/update.php<?php echo '?id='.$_GET['id'] ?>'>Update</a>
+        <a class="button" href='/web/task4/delete.php<?php echo '?id='.$_GET['id'] ?>'>Delete</a>
     </div>
 </body>
 </html>

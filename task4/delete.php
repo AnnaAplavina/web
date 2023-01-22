@@ -7,8 +7,9 @@
     <title>Delete</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-        a{
-            margin-top: 1em;
+        .button{
+            margin-top: 3em;
+            margin-left: 45%;
         }
     </style>
 </head>
@@ -17,10 +18,19 @@
         <h1>Удалить профиль?</h1>
     </header>
     <div class='main-info'>
+        <?php 
+            $users = new SimpleXMLElement(file_get_contents("users.xml"));
+            foreach($users->user as $user){
+                if(strcmp($user['id'], $_GET['id']) == 0){
+                    echo "<p>" . $user->name . "</p>";
+                    break;
+                }
+            }
+        ?>
         <form action="/web/task4/deleteuser.php" method="post">
             <button name="id" value=<?php echo "'" . $_GET['id'] . "'" ?>>Удалить</button>
         </form>
-        <a class='button' href=<?php echo "'/web/task4/index.php?id=" . $_GET['id'] . "'" ?>>Назад</a>
     </div>
+    <a class='button' href=<?php echo "'/web/task4/index.php?id=" . $_GET['id'] . "'" ?>>Назад</a>
 </body>
 </html>
