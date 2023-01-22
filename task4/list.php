@@ -21,7 +21,7 @@
     </div>
     <div class='container'>
         <div class="create-button">
-            <a class='button' href='/web/task4/create.php<?php echo '?id='.$_GET['id'] ?>'>Create</a>
+            <a class='button' href='/web/task4/create.php'>Create</a>
         </div>
     </div>
 </body>
