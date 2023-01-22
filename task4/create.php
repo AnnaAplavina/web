@@ -12,6 +12,10 @@
             margin-top: 0.3em;
             margin-bottom: 0.3em;
         }
+        .links-two{
+            margin-top: 3em;
+            padding-left: 40%;
+        }
     </style>
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -37,6 +41,10 @@
             </datalist>
             <button type="submit">Создать</button>
         </form>
+    </div>
+    <div class='links-two'>
+        <a class="button" href='/web/task4/update.php<?php echo '?id='.$_GET['id'] ?>'>Update</a>
+        <a class="button" href='/web/task4/delete.php<?php echo '?id='.$_GET['id'] ?>'>Delete</a>
     </div>
 </body>
 </html>
